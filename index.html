@@ -51,6 +51,62 @@
     <!-- Title -->
     
       <h1 class="blog-post-title">
+        <a href="/2018/12/13/swift学习笔记/">Swift学习笔记</a>
+      </h1>
+    
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        2018-12-13
+        
+    </p>
+
+    
+
+    <!-- Content -->
+    <h2 id="面向过程编程"><a href="#面向过程编程" class="headerlink" title="面向过程编程"></a>面向过程编程</h2><ul>
+<li>定义常量 、变量<br>let 常量名<br>var 变量</li>
+<li>常量赋值<br>let  常量名 = 值<br>（注：常量必须进行初始化，否则会报错）</li>
+<li><p>基本数据类型<br>整数：Int<br>浮点数：Double，Float<br>字符：Character<br>字符串：String<br>布尔类型：Bool（只有true和false）<br>元祖类型：Tuple（定义变量的一个组合）</p>
+</li>
+<li><p>可选类型Optional：代表变量可能有值的情况<br>var 变量 ：类型？,默认是无值（nill）</p>
+</li>
+<li>集合类型<br>定义：Array&lt;类型&gt;或[类型]<br>有默认值的数组，array = [ Int ] (repeatElement(   ,count:    ))<br>有序范围的Int数组，Array（起始值…终止值）<br>insert 插入<br>remove 移除<br>contains 检查是否包含<br>sorted 转换为数组</li>
+<li>控制流<br>if  else<br>switch(超过两个以上条件判断的场合)和case合用(一个变量多个条件判断)默认default：（表示不在switch规定的范围内）<br>for…in…<br>while</li>
+<li>字典<br>Dictionary &lt;键类型，值类型&gt;或[键类型：值类型]<br>计数 count，空否：is Empty<br>添加或更新 字典变量 [键] = 值<br>循环一个字典<br>for  （key,value）in 字典变量{<pre><code>  print(key,value)
+}
+</code></pre>把键值对分离成数组，用[数组类型] （字典变量，keys），[数组变量]（字典变量.values）</li>
+<li>闭包（一种函数的简写形式，省去函数名，把参数和返回值放入花括号内）<br>捕获和存储定义在其上下文中的任何常量和变量的引用<br>{(parameters/接收的参数) -&gt;  (return type/闭包返回值类型)  in<br> stasements/保存在闭包中需要执行的代码<br>}</li>
+<li>枚举<br>enum <h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2></li>
+<li><p>类 class<br>getter 描述属性如何计算及返回语句，get{语句和返回}<br>setter 有新值后如何影响其他属性,set{语句}<br>class 类名：SuperClass{<br>定义属性和方法<br>}<br>（注：定义的类可以没有父类，那么该类是rootClass<br>通常情况下，定义类时，继承自NSObject（非OC的NSObject））</p>
+<ul>
+<li>类的属性<br>存储属性：实类型的一部分，用于存储常量和变量<br>计算属性：通过某种方式计算出来的属性<br>类属性：与整个类自身相关的属性</li>
+<li>实例化<br>var shape = Shape()</li>
+</ul>
+</li>
+<li><p>结构体 struct</p>
+</li>
+</ul>
+
+    <!-- Only display the Read More link if we are displaying an excerpt -->
+    
+
+    <hr>
+
+    
+
+    
+
+
+
+</div>
+</div>
+
+
+    <div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    
+      <h1 class="blog-post-title">
         <a href="/2018/11/30/GIt学习笔记/">Git 学习笔记</a>
       </h1>
     

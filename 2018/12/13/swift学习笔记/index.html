@@ -1,0 +1,170 @@
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>swift学习笔记 | Hexo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/tagplugins.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    
+
+
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+</head>
+
+<body>
+  <div class="blog-header">
+   <a id="menu-nav-icon"><img src="/image/menu.png"></a>
+   <div class="nav-container">
+     <nav id="main-nav">
+       
+         <a class="main-nav-link" href="/">Home</a>
+       
+         <a class="main-nav-link" href="/archives">Archives</a>
+       
+     </nav>
+   </div>
+   <!--
+   <div id="search-form-wrap">
+     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://lu-luck.github.io"></form>
+   </div>
+ -->
+    <h1 class="blog-title">Hexo</h1>
+    <p class="lead blog-description"></p>
+</div>
+
+  <div id='main-part'>
+      <div class="main">
+<div class="blog-post">
+    <!-- Title -->
+    <h1 class="blog-post-title">
+        <a href="/2018/12/13/swift学习笔记/">
+            Swift学习笔记
+        </a>
+    </h1>
+    <!-- Date and Author -->
+    <p class="blog-post-meta">
+        2018-12-13
+        
+    </p>
+
+    
+
+    <!-- Content -->
+    <h2 id="面向过程编程"><a href="#面向过程编程" class="headerlink" title="面向过程编程"></a>面向过程编程</h2><ul>
+<li>定义常量 、变量<br>let 常量名<br>var 变量</li>
+<li>常量赋值<br>let  常量名 = 值<br>（注：常量必须进行初始化，否则会报错）</li>
+<li><p>基本数据类型<br>整数：Int<br>浮点数：Double，Float<br>字符：Character<br>字符串：String<br>布尔类型：Bool（只有true和false）<br>元祖类型：Tuple（定义变量的一个组合）</p>
+</li>
+<li><p>可选类型Optional：代表变量可能有值的情况<br>var 变量 ：类型？,默认是无值（nill）</p>
+</li>
+<li>集合类型<br>定义：Array&lt;类型&gt;或[类型]<br>有默认值的数组，array = [ Int ] (repeatElement(   ,count:    ))<br>有序范围的Int数组，Array（起始值…终止值）<br>insert 插入<br>remove 移除<br>contains 检查是否包含<br>sorted 转换为数组</li>
+<li>控制流<br>if  else<br>switch(超过两个以上条件判断的场合)和case合用(一个变量多个条件判断)默认default：（表示不在switch规定的范围内）<br>for…in…<br>while</li>
+<li>字典<br>Dictionary &lt;键类型，值类型&gt;或[键类型：值类型]<br>计数 count，空否：is Empty<br>添加或更新 字典变量 [键] = 值<br>循环一个字典<br>for  （key,value）in 字典变量{<pre><code>  print(key,value)
+}
+</code></pre>把键值对分离成数组，用[数组类型] （字典变量，keys），[数组变量]（字典变量.values）</li>
+<li>闭包（一种函数的简写形式，省去函数名，把参数和返回值放入花括号内）<br>捕获和存储定义在其上下文中的任何常量和变量的引用<br>{(parameters/接收的参数) -&gt;  (return type/闭包返回值类型)  in<br> stasements/保存在闭包中需要执行的代码<br>}</li>
+<li>枚举<br>enum <h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2></li>
+<li><p>类 class<br>getter 描述属性如何计算及返回语句，get{语句和返回}<br>setter 有新值后如何影响其他属性,set{语句}<br>class 类名：SuperClass{<br>定义属性和方法<br>}<br>（注：定义的类可以没有父类，那么该类是rootClass<br>通常情况下，定义类时，继承自NSObject（非OC的NSObject））</p>
+<ul>
+<li>类的属性<br>存储属性：实类型的一部分，用于存储常量和变量<br>计算属性：通过某种方式计算出来的属性<br>类属性：与整个类自身相关的属性</li>
+<li>实例化<br>var shape = Shape()</li>
+</ul>
+</li>
+<li><p>结构体 struct</p>
+</li>
+</ul>
+
+
+    <!-- Social share choices -->
+    
+  <div id="social-share">
+    <a data-url="http://lu-luck.github.io/2018/12/13/swift学习笔记/" href="https://plus.google.com/share?url=" class="googleplus"><img src="/image/googleplusicon.png" alt=""></a>
+    <a data-url="http://lu-luck.github.io/2018/12/13/swift学习笔记/" href="https://twitter.com/intent/tweet?url=" class="twitter"><img src="/image/twittericon.png" alt=""></a>
+    <a data-url="http://lu-luck.github.io/2018/12/13/swift学习笔记/" href="http://pinterest.com/pin/create/button/?url=" class="pinterest"><img src="/image/pinteresticon.png" alt=""></a>
+    <a data-url="http://lu-luck.github.io/2018/12/13/swift学习笔记/" href="https://www.facebook.com/sharer/sharer.php?u=" class="facebook"><img src="/image/facebookicon.png" alt=""></a>
+  </div>
+
+
+
+
+
+<!--
+
+
+https://www.facebook.com/sharer/sharer.php?u=http://lu-luck.github.io/2018/12/13/swift学习笔记/
+http://lu-luck.github.io/2018/12/13/swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
+-->
+
+
+
+    <hr>
+
+
+    <!-- Tags and Categories links -->
+    
+
+    
+
+
+    <!-- Comment using disqus -->
+    
+
+</div>
+</div>
+
+
+  </div>
+  <!-- Footer -->
+  <div id="footer">
+  <div id="footer-social">
+    
+    
+    
+    
+    
+    
+</div>
+
+  <p id="footer-info">
+    &copy; 2018 John Doe<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+    Theme <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
+  </p>
+
+  <div id="busuanzi">
+    <span id="busuanzi_container_site_pv">
+      &hearts;
+    Total visits: <span id="busuanzi_value_site_pv"></span>
+    </span>
+  </div>
+  <!--
+  <div id="footer-info">
+    &copy; 2018 John Doe<br>
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+  </div>
+-->
+</div>
+
+  <!-- After footer scripts -->
+  <!-- Disqus Comments -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>
